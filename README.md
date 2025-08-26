@@ -10,7 +10,7 @@ O objetivo é gerenciar tarefas através de um menu interativo no console, permi
 - Editar uma tarefa existente
 - Excluir uma tarefa pelo ID
 - Atualizar o status de uma tarefa (ex: `Pendente` → `Concluída`)
-- [opcional] Listar todas as tarefas cadastradas
+
 
 ---
 
@@ -35,7 +35,7 @@ br.edu.fatecpg.toDoList
 - **Java 17+** (funciona em versões anteriores também)
 - **JDBC** para acesso ao banco de dados
 - **Banco de Dados** (MySQL / PostgreSQL / outro que preferir)
-- **Maven** (opcional, para gerenciar dependências)
+
 
 ---
 
@@ -91,16 +91,6 @@ CREATE TABLE tb_tarefa (
   - ID: `1`
   - Novo status: `Concluída`
 
----
-
-## 🚀 Melhorias Futuras
-- Listar todas as tarefas cadastradas
-- Adicionar persistência com Hibernate/JPA
-- Criar interface gráfica (JavaFX ou Swing)
-- Criar API REST com Spring Boot
-
----
-
-## 👨‍💻 Autor
+�‍💻 Autor
 Projeto desenvolvido para estudos de **Java + Banco de Dados**.  
-Feito por [Seu Nome](https://github.com/seu-usuario).
+Feito por Frank Augusto Neri De Oliveira (https://github.com/seu-usuario).
