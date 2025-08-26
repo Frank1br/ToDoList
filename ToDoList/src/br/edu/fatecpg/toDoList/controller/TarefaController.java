@@ -7,14 +7,15 @@ import java.sql.PreparedStatement;
 
 public class TarefaController {
 
-    public String inserirTarefa(String nome, String descricao, String status) {
-        String query = "INSERT INTO tb_tarefa (nome, descricao, status) VALUES (?, ?, ?)";
+    public String inserirTarefa(String nome, String descricao, String status, String id) {
+        String query = "INSERT INTO tb_tarefa (nome, descricao, status, id) VALUES (?, ?, ?, ?)";
 
         try (var conexao = Banco.conectar()) {
             PreparedStatement stmt = conexao.prepareStatement(query);
             stmt.setString(1, nome);
             stmt.setString(2, descricao);
             stmt.setString(3, status);
+            stmt.setString(4, id);
             stmt.execute();
             return "Tarefa inserida com sucesso!";
         } catch (Exception e) {
@@ -22,7 +23,7 @@ public class TarefaController {
         }
     }
 
-    public String editarTarefa(String id, String nome, String descricao, String status) {
+    public String editarTarefa(String nome, String descricao, String status, String id) {
         String query = "UPDATE tb_tarefa SET nome = ?, descricao = ?, status = ? WHERE id = ?";
 
         try (var conexao = Banco.conectar()) {

@@ -9,6 +9,7 @@ public class Tarefa {
     public Tarefa(String id, String nome, String descricao, String status) {
         this.id = id;
         this.nome = nome;
+        this.id = id;
         this.descricao = descricao;
         this.status = status;
     }
@@ -48,7 +49,6 @@ public class Tarefa {
     @Override
     public String toString() {
         return "Tarefa{" +
-                "id='" + id + '\'' +
                 ", nome='" + nome + '\'' +
                 ", descricao='" + descricao + '\'' +
                 ", status='" + status + '\'' +

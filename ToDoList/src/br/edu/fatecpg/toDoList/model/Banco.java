@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Banco {
-    private static final String url = "jdbc:postgresql://localhost:5433/db_tarefa";
+    private static final String url = "jdbc:postgresql://localhost:5433/db_toDoList";
     private static final String user = "postgres";
     private static final String password = "12345";
 
